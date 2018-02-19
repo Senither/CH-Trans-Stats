@@ -4,7 +4,7 @@
         "node": ">=6.0.0",
         "npm": ">=3.x.x"
     },
-     "xo": {
+    "xo": {
         "space": 4,
         "semicolon": true,
         "rules": {
@@ -30,9 +30,10 @@
     },
     "devDependencies": {
         "bootstrap": "^4.0.0",
-        "popper.js": "^1.12",
         "jquery": "^3.2",
         "laravel-mix": "^2.0",
+        "popper.js": "^1.12",
+        "pako": "^1.0.6",
         "xo": "^0.20.2"
     }
 }
