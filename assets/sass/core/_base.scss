@@ -1,0 +1,20 @@
+body {
+    background: $bgColor;
+    color: #FEFEFE;
+}
+
+table {
+    margin-bottom: 0px !important;
+
+    & thead tr {
+        background: $bgColor;
+    }
+
+    & tbody tr {
+        background: lighten($bgColor, 3%);
+
+        &:nth-child(odd) {
+            background: lighten($bgColor, 10%);
+        }
+    }
+}
