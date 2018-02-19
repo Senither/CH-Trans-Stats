@@ -1,0 +1,12 @@
+{
+    "name": "senither/ch-trans-stats",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexis Tan",
+            "email": "alexis@sen-dev.com"
+        }
+    ],
+    "require": {}
+}
