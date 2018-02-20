@@ -1,13 +1,13 @@
-Clicker Heroes Transcendens Statistics
+Clicker Heroes Transcendens History
 ======================================
 
-Quickly and easily see ascension data for old transcendence, the project is still under development, more stuff comming here soon...
+Quickly and easily see ascension history data for old transcendence, the project is still under development, more stuff comming here soon...
 
 ## Contributing
 
 Before creating an issue, please ensure that it hasn't already been reported/suggested.
 
-If you wish to contribute to the *Clicker Heroes Transcendens Statistics* codebase or documentation, feel free to fork the repository and submit a pull request. we follow the "fork-and-pull" Git workflow.
+If you wish to contribute to the *Clicker Heroes Transcendens History* codebase or documentation, feel free to fork the repository and submit a pull request. we follow the "fork-and-pull" Git workflow.
 
  1. **Fork** the repo on GitHub
  2. **Clone** the project to your own machine
@@ -23,4 +23,4 @@ You can catch me on my [Discord support server](https://discord.gg/ZpJDKzf) for 
 
 ## License
 
-*Clicker Heroes Transcendens Statistics* is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+*Clicker Heroes Transcendens History* is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).

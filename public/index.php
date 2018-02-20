@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width">
 
-    <title>Clicker Heroes Transcendens Statistics</title>
+    <title>Clicker Heroes Transcendens History</title>
 
     <link rel="stylesheet" type="text/css" href="https://bootswatch.com/3/darkly/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,7 +18,7 @@
         <div class="row header">
             <div class="col-sm-12">
                 <h1 class="text-center page-title">
-                    Clicker Heroes Transcendens Statistics
+                    Clicker Heroes Transcendens History
                     <span class="badge badge-danger">BETA</span>
                 </h1>
             </div>
