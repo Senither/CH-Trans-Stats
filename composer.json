@@ -8,5 +8,12 @@
             "email": "alexis@sen-dev.com"
         }
     ],
-    "require": {}
+    "require": {
+        "illuminate/support": "^5.5"
+    },
+    "autoload": {
+        "files": [
+            "assets/php/helpers.php"
+        ]
+    }
 }
