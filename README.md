@@ -1,7 +1,9 @@
 Clicker Heroes Transcensions History
 ======================================
 
-Quickly and easily see ascension history data for old transcendence, the project is still under development, more stuff comming here soon...
+Quickly and easily see ascension history data for old transcendences, the project is still under development, more stuff coming here soon...
+
+In the meantime you can checkout a live version of the app at https://ch-transcensions-history.senither.com/
 
 ## Contributing
 
