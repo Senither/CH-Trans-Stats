@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    <div class="container">
+    <div id="app" class="container">
         <!-- Start: Header -->
         <div class="row header">
             <div class="col-sm-12">
@@ -41,41 +41,11 @@
         </div>
         <!-- End: Save Panel -->
 
-        <!-- Start: Content Panel -->
-        <?php foreach(range(5, 1) as $asNum): ?>
-        <div class="row content">
-            <div class="col-sm-12">
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        Ascension #<?php echo $asNum; ?>
-                    </div>
-                    <div class="panel-body">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>Ascension #</th>
-                                    <th>Duration</th>
-                                    <th>HZE</th>
-                                    <th>HS Gained</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php foreach(range(0, 5) as $num): ?>
-                                    <tr>
-                                        <th><?php echo $num ?></th>
-                                        <td>12:34:56</td>
-                                        <td>12345</td>
-                                        <td>1.234e56789</td>
-                                    </tr>
-                                <?php endforeach; ?>
-                            </tbody>
-                        </table> 
-                    </div>
-                </div>
+        <div v-if="save !== null">
+            <div class="row content" v-for="trans in save.transcensions">
+                <transcenden :trans="trans"></transcenden>
             </div>
         </div>
-        <?php endforeach; ?>
-        <!-- End: Content Panel -->
 
         <!-- Start: Footer -->
         <footer>
