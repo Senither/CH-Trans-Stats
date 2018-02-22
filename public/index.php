@@ -36,6 +36,16 @@
                     <div class="panel-body form-group">
                         <input type="text" class="form-control" id="raw-save" placeholder="Enter your save here to view your transcensions history" onfocus="this.select()">
                     </div>
+
+                    <div class="panel-body mobile-info hidden-xs hidden-sm" v-if="save === null">
+                        <center>
+                            <p>
+                                If you're playing on a mobile device you can scan the QR code below to open the app on the device.
+                                <br>This message will disappear once a valid save has been entered into the input field above.
+                            </p>
+                            <img src="<?php echo mix('img/qr-code.png'); ?>">
+                        </center>
+                    </div>
                 </div>
             </div>
         </div>
