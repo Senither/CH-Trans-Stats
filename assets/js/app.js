@@ -2,7 +2,7 @@ const $ = require('jquery');
 const Vue = require('vue');
 const Decoder = require('./decoder');
 
-Vue.component('transcenden', require('./components/TranscendenComponent.vue'));
+Vue.component('transcensions', require('./components/TranscensionsComponent.vue'));
 
 $(() => {
     const app = new Vue({
