@@ -36,8 +36,13 @@
                 return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             },
             formatHeroSouls: function (heroSouls) {
-                // TODO: Find a easy way to actually format hero souls
-                return heroSouls;
+                if (heroSouls.indexOf('e') === -1) {
+                    return Math.floor(heroSouls).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                }
+
+                let parts = heroSouls.split('e');
+                let number = parts[0].split('.');
+                return number[0] + '.' + number[1].substring(0, 4) + 'e' + parts[1];
             },
             formatTime: function (time) {
                 time = time / 1000;
