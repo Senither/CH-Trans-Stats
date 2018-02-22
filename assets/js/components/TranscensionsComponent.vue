@@ -15,7 +15,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr v-for="ascension in trans.ascensions">
+                        <tr v-for="ascension in trans.ascensions" v-if="ascension.highestZoneEver > 0">
                             <th>{{ ascension.id }}</th>
                             <td>{{ formatTime(ascension.endTime - ascension.startTime) }}</td>
                             <td>{{ formatNumber(ascension.highestZoneEver) }}</td>
