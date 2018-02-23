@@ -46,13 +46,17 @@
                             <img src="<?php echo mix('img/qr-code.png'); ?>">
                         </center>
                     </div>
+
+                    <div class="panel-body mobile-info" v-if="save !== null">
+                        <stats :save="save"></stats>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- End: Save Panel -->
 
         <div v-if="save !== null">
-            <div class="row content" v-for="trans in save.transcensions">
+            <div class="row content" v-for="trans in save.stats.transcensions">
                 <transcensions :trans="trans"></transcensions>
             </div>
         </div>
