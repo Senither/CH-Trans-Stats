@@ -55,9 +55,24 @@
         </div>
         <!-- End: Save Panel -->
 
-        <div v-if="save !== null">
+        <div v-if="save !== null && hasTranscend()">
             <div class="row content" v-for="trans in save.stats.transcensions">
                 <transcensions :trans="trans"></transcensions>
+            </div>
+        </div>
+
+        <div v-if="save !== null && !hasTranscend()">
+            <div class="row content">
+                <div class="col-sm-12">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            Maybe ascend before you know... Use a transcensions/ascensions displayer thingy
+                        </div>
+                        <div class="panel-body">
+                            <p>Whoops, it doesn't look like you have transcended or ascended yet, we can't display information that isn't there, try ascend and then reimport your save to view your transcensions history.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

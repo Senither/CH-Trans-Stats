@@ -10,6 +10,19 @@ $(() => {
         el: '#app',
         data: {
             save: null
+        },
+        methods: {
+            hasTranscend() {
+                if (app.save === null || app.save === undefined) {
+                    return false;
+                }
+
+                let keys = Object.keys(app.save.stats.transcensions);
+                if (keys.length > 1) {
+                    return true;
+                }
+                return Object.keys(app.save.stats.transcensions[keys[0]].ascensions).length > 1;
+            }
         }
     });
 
