@@ -56,6 +56,22 @@
         <!-- End: Save Panel -->
 
         <div v-if="save !== null && hasTranscend()">
+            <div class="row" style="margin-bottom: 12px;">
+                <div class="col-md-12">
+                    <table class="table">
+                        <thead>
+                            <tr style="text-align: center;">
+                                <th style="width: 25%;">Transcension #</th>
+                                <th style="width: 20%;">Duration</th>
+                                <th style="width: 20%">HZE</th>
+                                <th style="width: 20%">HS Gained</th>
+                                <th style="width: 15%">Ascensions</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+
             <div class="row content" v-for="trans in save.stats.transcensions">
                 <transcensions :trans="trans"></transcensions>
             </div>
