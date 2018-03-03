@@ -1,10 +1,18 @@
 <template>
     <div class="col-sm-12">
-        <div class="panel panel-info">
-            <div class="panel-heading">
-                Transcension #{{ trans.id }}
-            </div>
-            <div class="panel-body">
+        <div @click="toggle()" class="panel panel-info">
+            <table class="table">
+                <thead class="panel-title">
+                    <tr style="text-align: center;">
+                        <th style="width: 25%;">Transcension #{{ trans.id }}</th>
+                        <th style="width: 20%;">{{ formatTime(trans.endTime - trans.startTime) }}</th>
+                        <th style="width: 20%">{{ formatNumber(trans.highestZoneEver) }}</th>
+                        <th style="width: 20%">{{ formatHeroSouls(trans.heroSoulsGained) }}</th>
+                        <th style="width: 15%">{{ formatNumber(trans.numAscensions) }}</th>
+                    </tr>
+                </thead>
+            </table>
+            <div v-show="isOpen" class="panel-body">
                 <table class="table table-hover">
                     <thead>
                         <tr>
@@ -31,7 +39,15 @@
 <script type="text/javascript">
     export default {
         props: ['trans'],
+        data: function () {
+            return {
+                isOpen: false
+            }
+        },
         methods: {
+            toggle: function () {
+                this.isOpen = !this.isOpen;
+            },
             formatNumber: function (number) {
                 return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             },

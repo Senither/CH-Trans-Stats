@@ -3,11 +3,19 @@ body {
     color: #FEFEFE;
 }
 
+.panel {
+    margin-bottom: 12px;
+}
+
 table {
     margin-bottom: 0px !important;
 
     & thead tr {
         background: $bgColor;
+    }
+
+    & thead.panel-title tr {
+        background: none;
     }
 
     & tbody tr {
