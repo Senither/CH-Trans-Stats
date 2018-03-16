@@ -9,10 +9,9 @@
         props: ['save'],
         methods: {
             getPlayed: function (save) {
-                let startTime = save.stats.transcensions[Object.keys(save.stats.transcensions)[0]].startTime;
                 let message = '';
 
-                let time = ((new Date).getTime() - startTime) / 1000;
+                let time = ((new Date).getTime() - save.creationTimestamp) / 1000;
 
                 let year = Math.floor(time / 31557600);
                 time -= year * 31557600;
